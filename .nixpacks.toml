@@ -5,7 +5,6 @@ nixPkgs = ['php83', 'composer', 'nodejs_20', 'mysql', 'git', 'npm']
 cmds = [
   'composer install --no-dev --optimize-autoloader',
   'php artisan config:cache',
-  'php artisan route:cache',
   'npm ci',
   'npm run build'
 ]
